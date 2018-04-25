@@ -1,0 +1,18 @@
+---
+title: "Movie Review"
+author: "Justin Sim"
+date: "4/23/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("exercise.R")
+link_markdown <- paste("`r ", "url`", sep = "")
+```
+
+# `r movie_name` Review
+## `r headline`
+> `r short_summary`
+
+`r reviews$link.suggested_link_text` at [this link](`link_markdown`).
